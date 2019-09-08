@@ -28,7 +28,7 @@ export default ({ price }) => (
             </OverlayTrigger>
         </Col>
         <Col style={styles.totalSavings} md={6}>
-            {price}
+            ${price}
         </Col>
     </Row>
 );

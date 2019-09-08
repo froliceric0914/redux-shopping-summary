@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+// import { Row, Col } from 'react-bootstrap';
 import './app.css';
 import Subtotal from './components/Subtotal';
 import PickupSavings from './components/PickupSavings';
 import TaxesFees from './components/TaxesFees';
 import EstimatedTotal from './components/EstimatedTotal.js';
-import ItemDetails from './components/ItemDetails';
+import ItemDetails from './components/ItemDetails/ItemDetails';
 
 class App extends Component {
     constructor(props) {
@@ -29,7 +29,7 @@ class App extends Component {
                     <EstimatedTotal
                         price={this.state.estimatedTotal.toFixed(2)}
                     />
-                    <ItemDetails />
+                    <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
                 </div>
             </div>
         );
